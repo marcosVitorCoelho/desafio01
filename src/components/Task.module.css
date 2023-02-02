@@ -1,0 +1,110 @@
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+
+    background: var(--gray-500);
+    width: 900px;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.6;
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.task + .task{
+    margin-top: 1rem;
+}
+
+.task input{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customCheckbox {
+    border: 2.5px solid var(--blue);
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+  
+.customCheckbox,
+  span {
+    transition: 0.5s ease;
+    color: #fff;
+}
+  
+.customCheckbox span {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+input[type='checkbox'] {
+    display: none;
+    appearance: none;
+}
+
+input[type='checkbox']:checked + .customCheckbox {
+    border-color: var(--purple)
+}
+  
+input[type='checkbox']:checked + .customCheckbox span {
+    background: var(--purple);
+}
+
+input[type='checkbox']:not(:checked) + .customCheckbox {
+    border-color: var(--blue)
+}
+
+input[type='checkbox']:not(:checked) + .customCheckbox span {
+    background: transparent;
+}
+  
+.checkboxContainer label {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}  
+
+.checkboxContainer label:hover{
+    cursor: pointer;
+}  
+
+
+.task button{
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    color: var(--gray-300);
+}
+
+.task button:hover{
+    color: var(--danger);
+}
+
+.title{
+    align-self: center;
+    font-size: 0.875rem;
+}
+
+
+.taskIsDone{
+    align-self: center;
+    font-size: 0.875rem;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}

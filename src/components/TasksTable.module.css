@@ -1,0 +1,32 @@
+.tasks{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.taskHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1rem;
+}
+
+.taskHeader > p:first-of-type {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.taskHeader > p:last-of-type{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.taskHeader > p span{
+    background: var(--gray-400);
+    color: var(--gray-100);
+    padding: 2px 8px;
+    gap: 10px;
+
+    border-radius: 999px;
+    width: 24px;
+    height: 19px;
+}
