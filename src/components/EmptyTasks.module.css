@@ -11,7 +11,6 @@
     border-radius: 10px 10px 0 0;
     padding: 8rem 0;
 }
-
 .empty p:first-of-type{
     color: var(--gray-200);
 }
